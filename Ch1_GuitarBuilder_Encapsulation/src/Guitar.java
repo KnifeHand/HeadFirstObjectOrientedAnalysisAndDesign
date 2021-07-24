@@ -11,10 +11,10 @@ public class Guitar {
      * @param serialNumber -
      * @param price        -
      */
-    public Guitar(String serialNumber, double price, Builder builder, String model, Type type, Wood backWood, Wood topWood) {
+    public Guitar(String serialNumber, double price, GuitarSpec spec){//, Builder builder, String model, Type type, Wood backWood, Wood topWood) {
         this.serialNumber = serialNumber;
         this.price = price;
-        this.spec = new GuitarSpec(builder, model, type, backWood, topWood);
+        this.spec = spec;// = new GuitarSpec(builder, model, type, numStrings, backWood, topWood);
     }
 //    public Guitar(String serialNumber, double price, Builder builder, String model, Type type, Wood backWood, Wood topWood) {
 //    }
