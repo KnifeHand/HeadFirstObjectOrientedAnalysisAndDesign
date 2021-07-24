@@ -114,7 +114,7 @@ be performed on behalf of the first object.
 Delegation lets each object worry about equality (or some other task) on its own.
 This means your objects are more independent of each other, or more *loosely coupled*.
 
-###*Loosly Coupled*
+### *Loosly Coupled*
 Looslely coupled is when the objects in your application each have a specific 
 job to do, and they do only that job. So the functionality of your app is spread out
 over lots of well-defined objects, which each do a single task really well.
