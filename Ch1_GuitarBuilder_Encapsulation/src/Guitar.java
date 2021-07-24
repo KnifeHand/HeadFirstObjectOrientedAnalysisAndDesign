@@ -6,7 +6,9 @@ public class Guitar {
     private GuitarSpec spec;
 
     /**
-     * Class Constructor that creates an new object
+     * Class Constructor that creates an new object. GuitarSpec now has a
+     * new object type that stores all its properties instead of sending over
+     * and entire Guitar object.
      *
      * @param serialNumber -
      * @param price        -

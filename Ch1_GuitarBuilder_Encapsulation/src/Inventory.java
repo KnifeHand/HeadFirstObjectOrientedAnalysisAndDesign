@@ -79,8 +79,19 @@ public class Inventory {
 //    }
 
     /**
-     * Compares each property of the Guitar object it's passed in to each Guitar
-     * object in the inventory.
+     * This is where the client provides their guitar preference and the search
+     * tool looks through the inventory. Each guitar is compared to the client's
+     * preference and given a list of matching guitars.
+     *
+     * Here, we are delegating GuitarSpec to tell if two
+     * specs are equal, instead of comparing the two GuitarSpec objects directly
+     * within the search method itself. Therefore, search() delegates the
+     * comparison to GuitarSpec.
+     *
+     * Every time a new property is added to GuitarSpec.java, or the methods in
+     * GuitarSpec change, the search() method in Inventory.java will have to
+     * change too. We should let GuitarSpec handle comparisons, and encapsulate
+     * these properties away from Inventory.
      *
      * @param searchSpec - Searches through the inventory of guitars to see if present.
      * @return - returns the user search parameters if in the inventory.

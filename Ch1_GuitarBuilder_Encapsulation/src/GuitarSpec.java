@@ -1,3 +1,9 @@
+/**
+ * This class can put all potentially duplicate code from the Guitar class here
+ * and then have Guitar objects reference an instance of it to ovoid any
+ * duplication. This object stores just the specs that clients want to send to
+ * the search() method. That way they are not sending an entire Guitar object.
+ */
 public class GuitarSpec {
 
     private Builder builder; // Enumerated type
@@ -11,6 +17,16 @@ public class GuitarSpec {
         return numStrings;
     }
 
+    /**
+     * Class Constructor
+     *
+     * @param builder
+     * @param model
+     * @param type
+     * @param numStrings
+     * @param backWood
+     * @param topWood
+     */
     public GuitarSpec(Builder builder, String model, Type type, int numStrings, Wood backWood, Wood topWood) {
         this.builder = builder;
         this.model = model;
@@ -41,6 +57,20 @@ public class GuitarSpec {
         return topWood;
     }
 
+    /**
+     * Delegation makes code more reusable. It also lets each object worry
+     * about its own functionality, rather than spreading the code that handles
+     * a single object's behavior all throughout your applicaiton.
+     *
+     * One of the most common examples of delegation in Java is the equals()
+     * method. Instead of a method trying to figure out if two objects are
+     * equal, it calls equals() on one of the objects and passes in the
+     * second object. Then it just gets back a true or false response from
+     * the equals() method.
+     *
+     * @param otherSpec -
+     * @return
+     */
     public boolean matches(GuitarSpec otherSpec) {
         if ((model != null) && (!model.equals("")) && (!model.equals(otherSpec.model)))
             return false;
