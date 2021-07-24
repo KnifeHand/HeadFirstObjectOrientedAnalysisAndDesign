@@ -28,16 +28,19 @@ There is nothing that syas you have to follow these steps exactly, but they do
 provide an easy path to follow to make sure your software does what it's 
 supposed to, and is well-designed and easy to reuse. If you've got something 
 similar that accomplishes the same goals, that's great!
+
 ![Great Software Steps](./images/GreatSoftware.JPG)
 
 This is a UML of an inventory management application, and a search tool to
 help the customer match the instrument they are looking for in the app.
+
 ![UML of guitar builder](./images/uml.JPG)
 
 This UML demonstrates the implementation of enumerations used in the search tool
 by getting rid of all the String comparisons. Enumerated types let you define a
 type name like Wood, and then a set of values that are allowed for that type
 (like COCOBOLO, SITKA, and MAHOGANY).
+
 ![UML Enums](./images/UML_Enums.JPG)
 
 ##Encapsulation
