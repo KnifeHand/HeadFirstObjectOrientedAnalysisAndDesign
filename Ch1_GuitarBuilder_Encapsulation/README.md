@@ -1,4 +1,4 @@
-#Chapter 1 - Encapsulation
+# Chapter 1 - Encapsulation
 
 The point of this app is to search for item attributes that match a customer
 preference of a guitar. The app matches the guitar in the inventory and returns
@@ -10,7 +10,7 @@ sure your code does what it's supposed to, and that it's well designed. That
 means your code is flexible, it's easy to make changes to it, and it's 
 maintainable and reusable.
 
-##Unified Modeling Language (UML)
+## Unified Modeling Language (UML)
 You just need a set of steps to follow that makes sure your software works and
 is well designed. It can be as simple as the three steps shown here. You just
 need something that works, and that you can use on all of your software projects.
@@ -43,7 +43,7 @@ type name like Wood, and then a set of values that are allowed for that type
 
 ![UML Enums](./images/UML_Enums.JPG)
 
-##Encapsulation
+## Encapsulation
 Encapsulation allows you to group your applicaiton into logical parts.
 
 Encapsulation is used to keep the parts of your code that stay the same separate
@@ -67,22 +67,22 @@ app, you can change one part without having to chage all the other parts. In
 general, you should encapsulate the parts of your app that might vary away 
 from the parts that will stay the same.
 
-####1. Objects should do what their names indicate.
+#### 1. Objects should do what their names indicate.
 If an object is name Car, it should probably accelerate() and stop(), but it 
 shouldn't paintTheCarRed()--that's the job of another object, and doesn't 
 belong in the Car class.
 
-####2. Each object should represent a single concept.
+#### 2. Each object should represent a single concept.
 You don't want objects serving double or triple duty. Avoid a Cow object that
 represents a real moo'ing cow, a fake cow, or a runner jumping over a hurdle. 
 
-####3. Unused properties are a dead giveaway.
+#### 3. Unused properties are a dead giveaway.
 If you've got an object that is being used with no-value or null properties
 often, you've probably got an object doing more than one job. If you rarely
 have values for a certain property, why is that property part of the object?
 Would there be a better object to use with just a subset of those properties?
 
-##Flexibility
+## Flexibility
 Flexibility is so that your software can change and grow without
 constant rework. These are used to keep applications from being fragile.
 
@@ -95,7 +95,7 @@ By introducing principles like encapsulation and good class design into
 your code, it's easier to make these changes, and your application becomes a
 lot more flexible.
 
-##Functionality
+## Functionality
 Without functionality, you'll NEVER make the customer happy. No matter how
 well-designed your application is, flexibility is what you are trying to
 achieve.
@@ -103,7 +103,7 @@ achieve.
 Use a textual description of the problem you're trying to solve to make sure 
 that your design lines up with the intended functionality of your application.
 
-##Design Pattern
+## Design Pattern
 Design Patterns are all about reuse and making sure you're not trying to solve a
 problem that someone else has already figured out.
 
